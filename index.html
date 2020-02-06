@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="/scripts/popper.min.js">
+    <link rel="stylesheet" href="/scripts/jquery-3.4.1.slim.min.js">
+    <link rel="stylesheet" href="/scripts/bootstrap.min.js">
+    <link rel="stylesheet" href="/style/bootstrap.min.css">
+    
+    <title>Javascript</title>
+    <!--algunas variables son asigbadas en demo.js-->
+    <script src="/scripts/demo.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+
+        <!--Inicio-->
+        <div class="principal">
+            <h1>Pruebas de cadenas,asignacion de variables y resultados</h1>
+            <script>
+                document.write(x);
+                document.write("</br>");
+                document.write(num1);
+                document.write("</br>");
+                document.write(num2);
+                document.write("</br>");
+                document.write(sayHello);
+            </script>
+        </div>
+
+        <!--Caracteres de cadena-->
+        <div>
+            <h1>Caracteres especiales de cadena </h1>
+
+            <img id="caracteres_especiales" src="/images/caracteres_especiales.jpg" alt="caracteres especiales">
+        </div>
+        <!--Valores booleanos-->
+        <div>
+            <h1>Valores booleanos</h1>
+            <script>
+                document.write(isActive + "</br>");
+                document.write(isHoliday + "</br>");
+            </script>
+        </div>
+
+
+        <!--Operadores aricmeticos-->
+        <div>
+            <h1>Operadores Aricmeticos</h1>
+            <img id="operadores_aricmeticos" src="/images/operadores_aricmeticos.jpg" alt="operadores aricmeticos">
+            <br>
+
+            <script>
+                document.write("valor de var y :" + y + "</br>");
+                document.write("valor de var z :" + z);
+            </script>
+
+            <div>
+                <h1>Incremento y disminucion</h1>
+                <img src="/images/incremento_disminucion.jpg" alt=" operadores de incremento y disminucion">
+
+                <h2>La asignacion de incremento o disminucion depende de la variable que tiene el operador</h2>
+
+            </div>
+        </div>
+        <!--Operadores de comparacion-->
+        <div>
+            <h1>Operadores de comparacion</h1>
+
+            <img src="/images/operadores_comparacion.jpg" alt="operadores de comparacion">
+        </div>
+
+        <!--Operadores logicos y booleanos-->
+        <div>
+            <h1>Operadores Logicos y booleanos</h1>
+            <img src="/images/opradores_booleanos.jpg" alt="operadores booleanos">
+
+            <h2>Operador Ternario</h2>
+            <script>
+                document.write(isAdult);
+            </script>
+
+        </div>
+
+        <!--Condicionales y loops-->
+
+        <div>
+            <h1>Condicionales</h1>
+
+            <div>
+                <h2>Sentencia if</h2>
+                <img src="/images/sentencia_if.JPG" alt="sentencia if condicional">
+                <br>
+
+                <script>
+                    if (myNum1 < myNum2) {
+                        alert("JavaScript is easy to learn.");
+                        document.write("JavaScript is easy to learn.");
+                    }
+                </script>
+
+                <script>
+                    if (num3 < num4) {
+                        alert("El numero " + num4 + " es mayor que " + num3);
+                        document.write("</br>");
+                        document.write("El numero " + num4 + " es mayor que " + num3);
+                    }
+                </script>
+
+            </div>
+
+            <div>
+                <h2>Sentencia if else</h2>
+
+                <img src="/images/sentencia_if_else.JPG" alt="sentencia if else condicional">
+
+                <script>
+                    var myNum1 = 7;
+                    var myNum2 = 10;
+
+                    if (myNum1 > myNum2) {
+                        alert("This is my first condition");
+                    }
+                    else {
+                        alert("This is my second condition");
+                    }
+                </script>
+
+                <br>
+
+                <script>
+                    var miNum1 = 9;
+                    var miNum2 = 16;
+                    if (miNum1 > miNum2) {
+                        alert("primera condicion");
+                        document.write("primera condicion");
+                    }
+                    else {
+                        alert("segunda condicion");
+                        document.write("segunda condicion");
+                    }
+                </script>
+
+            </div>
+
+            <div>
+
+                <h2>Sentencia else-if</h2>
+                <img src="/images/sentencia_else_if.JPG" alt="sentencia condicional else-if">
+
+                <script>
+                    var miNum3 = 9;
+
+                    if (miNum3 == 9) {
+                        document.write("<h3> Esto es HTML </h3>");
+                    }
+                    else if (miNum3 == 4) {
+                        document.write("<h3>Esto es CSS </h3>");
+                    }
+                    else {
+                        document.write("<h3>Esto es Javascript </h3>");
+                    }
+                </script>
+
+                <script>
+                    var estado = 1;
+                    var msg;
+
+                    if (estado == 1) {
+                        msg = "online";
+                        document.write(msg);
+                    }
+                    else if (estado == 2) {
+                        msg = "away";
+                        document.write(msg);
+                    } else {
+                        msg = "offline";
+                        document.write(msg);
+                    }
+
+                </script>
+            </div>
+
+            <div>
+                <h2>Sentencia Switch-Case</h2>
+                <img src="/images/sentencia_switch_case.JPG" alt="sentencia condicional switch case">
+
+                <script>
+                var day=2;
+
+                switch(day){
+                    case 1:
+                        console.log("Lunes");
+                        break;
+                    case 2:
+                        console.log("Martes");
+                        break;
+                    case 3:
+                        console.log("Miercoes");
+                        break;
+                    case 4: 
+                        console.log("Jueves");
+                        break;
+                    case 5:
+                        console.log("Viernes");
+                        break
+                    case 6:
+                        console.log("Sabado");
+                        break;
+                    case 7:
+                        console.log("Fomingo");
+                        break;
+                    default:
+                        console.log("Se ingreso un dia numerico de la semana no valido");
+
+                }
+                </script>
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>
